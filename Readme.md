@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Антонина Манжела](https://up.htmlacademy.ru/adaptive/25/user/548411).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/talequale).
 
 ---
 
