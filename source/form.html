@@ -50,13 +50,13 @@
                 </label>
               </li>
               <li class="general-info__item">
-                <label class="fieldset__label input-field">
+                <label class="text-field">
                   <span class="text-field__label">Вес (кг):<sup>*</sup></span>
                   <input class="text-field__input" type="text" name="cat-weight" placeholder="7">
                 </label>
               </li>
               <li class="general-info__item">
-                <label class="fieldset__label input-field">
+                <label class="text-field">
                   <span class="text-field__label">Возраст (лет):</span>
                   <input class="text-field__input" type="text" name="cat-age" placeholder="7">
                 </label>
@@ -89,30 +89,29 @@
           </fieldset>
         </div>
 
-        <fieldset class="program-form__fieldset program-form__fieldset--contacts">
+        <fieldset class="form__fieldset form__fieldset--contacts contacts">
+          <legend class="contacts__title title-line">Контактные данные (владельца кота)</legend>
           <div class="contacts__wrapper">
-            <legend class="contacts__title title-line">Контактные данные (владельца кота)
-            </legend>
-            <div class="program-form__wrapper">
-              <ul class="contacts-info">
-                <li class="contacts-info__item">
-                  <label class="text-field">
-                    <span class="text-field__label">E-mail:<sup>*</sup></span>
-                    <input class="text-field__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
-                  </label>
-                </li>
-                <li class="contacts-info__item">
-                  <label class="text-field">
-                    <span class="text-field__label">Телефон:<sup>*</sup></span>
-                    <input class="text-field__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
-                  </label>
-                </li>
-            </div>
+            <ul class="contacts-info">
+              <li class="contacts-info__item">
+                <label class="text-field">
+                  <span class="text-field__label">E-mail:<sup>*</sup></span>
+                  <input class="text-field__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                </label>
+              </li>
+              <li class="contacts-info__item">
+                <label class="text-field">
+                  <span class="text-field__label">Телефон:<sup>*</sup></span>
+                  <input class="text-field__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
 
-        <fieldset class="program-form__comment comment">
+        <fieldset class="form__comment comment">
+          <legend class="comment-title title-line">Комментарий</legend>
           <div class="comment__wrapper">
-            <legend class="comment-title title-line">Комментарий</legend>
             <label class="comment__label">
               <textarea class="comment__input" name="message" cols="30" rows="10"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -120,9 +119,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="program-form__additionally additionally">
+        <fieldset class="form__additionally additionally">
+          <legend class="additionally__title title-line">Дополнительно</legend>
           <div class="additionally__wrapper">
-            <legend class="additionally-title title-line">Дополнительно</legend>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <label class="additionally__label">
@@ -152,9 +151,9 @@
           </div>
         </fieldset>
 
-        <div class="program-form__button-field">
-          <button class="program-form__button button" type="submit">Отправить заявку</button>
-          <p class="program-form__important"><sup>*</sup> — Обязательные поля</p>
+        <div class="form__button-field">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <p class="form__important"><sup>*</sup> — Обязательные поля</p>
         </div>
       </form>
     </section>
