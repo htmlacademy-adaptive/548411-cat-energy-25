@@ -1,17 +1,20 @@
 .intro {
+  position: relative;
+  margin: 0 auto;
   text-align: center;
 }
 
 .intro__wrapper {
   padding: 27px 35px;
   min-height: 302px;
-  background: linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("/source/img/content/index-can-mobile.png");
+  background: linear-gradient(fade(@base-color, 85%), fade(@base-color, 85%)), url("/source/img/content/index-can-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .intro__slogan {
+  margin: 25px 0 29px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -20,4 +23,15 @@
 
 .intro__link-wrapper {
   padding-top: 138px;
+}
+
+.intro__image {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 280px;
+  height: 270px;
+  margin: auto;
 }

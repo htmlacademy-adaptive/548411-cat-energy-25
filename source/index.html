@@ -8,27 +8,31 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
-      <img class="logo" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+  <header class="page__header main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__logo-block">
+       <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
+          <img class="logo" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+        </a>
       </div>
-    </nav>
+      <nav class="main-nav">
+       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+           <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Главная</a>
+           </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-page">
@@ -121,8 +125,10 @@
         <div class="example__result">
           <ul class="example__result-list">
             <li class="example__result-item">
-              <span class="example__result-value">5 кг</span>
-              <span class="example__result-description">снижение веса</span>
+              <div class="example__result-frame">
+                <span class="example__result-value">5 кг</span>
+                <span class="example__result-description">снижение веса</span>
+              </div>
             </li>
             <li class="example__result-item">
               <div class="example__result-frame">
