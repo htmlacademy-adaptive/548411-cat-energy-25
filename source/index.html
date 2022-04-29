@@ -7,7 +7,7 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
@@ -18,13 +18,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a>Главная</a>
+            <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -37,10 +37,12 @@
 
     <section class="intro">
       <div class="intro__wrapper">
-        <h2 class="intro__title section-title">Функциональное питание для котов</h2>
+        <h2 class="intro__title titile title--main">Функциональное питание для котов</h2>
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
         <img class="intro__image" src="img/content/index-can-mobile.png" width="280" height="270" alt="Корм Cat Energy">
-        <a class="intro__link button" href="form.html">Подобрать программу</a>
+      </div>
+      <div class="intro__link-wrapper">
+        <a class="intro__link button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -76,7 +78,7 @@
 
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__title section-title">Как это работает?</h2>
+        <h2 class="advantages__title title">Как это работает?</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__item-wrapper">
@@ -145,10 +147,13 @@
                 alt="Фото кота после диеты">
             </li>
           </ul>
-          <p class="example__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">Было</button>
-            <button class="slider__toggle" type="button">Стало</button>
-          </p>
+          <div class="example__toggles slider__toggles">
+            <button class="slider__toggles slider__toggle--before" type="button"></button>
+            <button class="slider__toggles slider__toggle--after" type="button"></button>
+            <label class="slider__toggles-label" for="before">Было</label>
+            <div class="slider__toggles-range"></div>
+            <label class="slider__toggles-label" for="after">Стало</label>
+          </div>
         </div>
       </div>
     </section>
@@ -161,7 +166,7 @@
         <p class="partnership__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <iframe class="partnership__map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.446239645892!2d30.31485056925049!3d59.93858751527533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1649059130592!5m2!1sru!2sru"
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          width="800" height="600" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a class="main-footer__logo logo" href="index.html">

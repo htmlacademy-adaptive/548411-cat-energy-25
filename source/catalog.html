@@ -7,7 +7,7 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
@@ -18,13 +18,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -98,15 +98,15 @@
               <a class="product-card__link" href="#">
                 <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
               </a>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Масса</span>
                 <span class="product-card__value">500 г</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Вкус</span>
                 <span class="product-card__value">Рыба</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Цена</span>
                 <span class="product-card__value">700 Р.</span>
               </div>
@@ -124,15 +124,15 @@
               <a class="product-card__link" href="#">
                 <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
               </a>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Масса</span>
                 <span class="product-card__value">1000 г</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Вкус</span>
                 <span class="product-card__value">Рыба</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Цена</span>
                 <span class="product-card__value">1000 Р.</span>
               </div>
@@ -150,15 +150,15 @@
               <a class="product-card__link" href="#">
                 <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
               </a>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Масса</span>
                 <span class="product-card__value">500 г</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Вкус</span>
                 <span class="product-card__value">Гречка</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Цена</span>
                 <span class="product-card__value">400 Р.</span>
               </div>
@@ -176,15 +176,15 @@
               <a class="product-card__link" href="#">
                 <h3 class="product-card__title">Cat Energy SLIM 1000 г</h3>
               </a>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Масса</span>
                 <span class="product-card__value">1000 г</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Вкус</span>
                 <span class="product-card__value">Гречка</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Цена</span>
                 <span class="product-card__value">700 Р.</span>
               </div>
@@ -202,15 +202,15 @@
               <a class="product-card__link" href="#">
                 <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
               </a>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Масса</span>
                 <span class="product-card__value">500 г</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Вкус</span>
                 <span class="product-card__value">Рис</span>
               </div>
-              <div class="product-card__description-itemr">
+              <div class="product-card__description-item">
                 <span class="product-card__parameter">Цена</span>
                 <span class="product-card__value">500 Р.</span>
               </div>
@@ -224,7 +224,7 @@
               <h3 class="show-more__title">Показать еще 100500 товаров</h3>
             </a>
             <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-            <a class="show-more__purchase button" href="#">Показать все</a>
+            <a class="show-more__purchase button button--secondary" href="#">Показать все</a>
           </div>
         </li>
       </ul>
@@ -232,15 +232,17 @@
 
     <section class="catalog-page__additional-products additional-products">
       <div class="additional-products__wrapper">
-        <h2 class="additional-products__title title-line">Дополнительные товары</h2>
+        <h2 class="additional-products__title title-line title-line--secondary">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item">
             <article class="additional-products__box additional-product">
               <a class="additional-product__link" href="#">
                 <h3 class="additional-product__title">Сахарозаменитель</h3>
               </a>
-              <span class="additional-product__parameter">1 упаковка (100г)</span>
-              <span class="additional-product__value">200 Р.</span>
+              <div class="additional-product__description-list">
+                <span class="additional-product__parameter">1 упаковка (100г)</span>
+                <span class="additional-product__value">200 Р.</span>
+              </div>
               <a class="additional-product__purchase button" href="form.html">Заказать</a>
             </article>
           </li>
@@ -249,8 +251,10 @@
               <a class="additional-product__link" href="#">
                 <h3 class="additional-product__title">Питьевая вода</h3>
               </a>
-              <span class="additional-product__parameter">5 литров</span>
-              <span class="additional-product__value">50 Р.</span>
+              <div class="additional-product__description-list">
+                <span class="additional-product__parameter">5 литров</span>
+                <span class="additional-product__value">50 Р.</span>
+              </div>
               <a class="additional-product__purchase button" href="form.html">Заказать</a>
             </article>
           </li>
@@ -259,8 +263,10 @@
               <a class="additional-product__link" href="#">
                 <h3 class="additional-product__title">Молоко</h3>
               </a>
-              <span class="additional-product__parameter">1 литр</span>
-              <span class="additional-product__value">100 Р.</span>
+              <div class="additional-product__description-list">
+                <span class="additional-product__parameter">1 литр</span>
+                <span class="additional-product__value">100 Р.</span>
+              </div>
               <a class="additional-product__purchase button" href="form.html">Заказать</a>
             </article>
           </li>
@@ -269,8 +275,10 @@
               <a class="additional-product__link" href="#">
                 <h3 class="additional-product__title">Витамины</h3>
               </a>
-              <span class="additional-product__parameter">1 упаковка (30 г)</span>
-              <span class="additional-product__value">300 Р.</span>
+              <div class="additional-product__description-list">
+                <span class="additional-product__parameter">1 упаковка (30 г)</span>
+                <span class="additional-product__value">300 Р.</span>
+              </div>
               <a class="additional-product__purchase button" href="form.html">Заказать</a>
             </article>
           </li>
@@ -294,7 +302,7 @@
         <p class="partnership__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <iframe class="partnership__map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.446239645892!2d30.31485056925049!3d59.93858751527533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1649059130592!5m2!1sru!2sru"
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          width="800" height="600" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a class="main-footer__logo logo" href="index.html">
