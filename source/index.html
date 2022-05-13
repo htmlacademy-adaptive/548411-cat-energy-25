@@ -4,30 +4,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
-      <img class="logo" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+<body class="page__body">
+  <header class="page__header main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__logo-block">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
+          <img class="logo" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+        </a>
       </div>
-    </nav>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__toggle-bar"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-page">
@@ -36,10 +44,12 @@
 
     <section class="intro">
       <div class="intro__wrapper">
-        <h2 class="intro__title section-title">Функциональное питание для котов</h2>
+        <h2 class="intro__title title title--main">Функциональное питание для котов</h2>
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
         <img class="intro__image" src="img/content/index-can-mobile.png" width="280" height="270" alt="Корм Cat Energy">
-        <a class="intro__link button" href="form.html">Подобрать программу</a>
+      </div>
+      <div class="intro__link-wrapper">
+        <a class="intro__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -75,16 +85,16 @@
 
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__title section-title">Как это работает?</h2>
+        <h2 class="advantages__title title">Как это работает?</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--leaf">
             <div class="advantages__item-wrapper">
               <img class="advantages__image" src="img/content/leaf.svg" width="60" height="60" alt="Листок">
               <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.
               </p>
             </div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--powder">
             <div class="advantages__item-wrapper">
               <img class="advantages__image" src="img/content/tub.svg" width="60" height="60" alt="Порошок">
               <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
@@ -92,14 +102,14 @@
               </p>
             </div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--eat">
             <div class="advantages__item-wrapper">
               <img class="advantages__image" src="img/content/eat.svg" width="60" height="60" alt="Еда">
               <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.
               </p>
             </div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--time">
             <div class="advantages__item-wrapper">
               <img class="advantages__image" src="img/content/alarm.svg" width="60" height="60" alt="Будильник">
               <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -118,8 +128,10 @@
         <div class="example__result">
           <ul class="example__result-list">
             <li class="example__result-item">
-              <span class="example__result-value">5 кг</span>
-              <span class="example__result-description">снижение веса</span>
+              <div class="example__result-frame">
+                <span class="example__result-value">5 кг</span>
+                <span class="example__result-description">снижение веса</span>
+              </div>
             </li>
             <li class="example__result-item">
               <div class="example__result-frame">
@@ -144,10 +156,13 @@
                 alt="Фото кота после диеты">
             </li>
           </ul>
-          <p class="example__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">Было</button>
-            <button class="slider__toggle" type="button">Стало</button>
-          </p>
+          <div class="example__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--before" type="button"></button>
+            <button class="slider__toggle slider__toggle--after" type="button"></button>
+            <label class="slider__toggles-label">Было</label>
+            <div class="slider__toggles-range"></div>
+            <label class="slider__toggles-label">Стало</label>
+          </div>
         </div>
       </div>
     </section>
@@ -155,12 +170,12 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <iframe class="contacts__map"
+      <div class="main-footer__partnership partnership">
+        <p class="partnership__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="partnership__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <iframe class="partnership__map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.446239645892!2d30.31485056925049!3d59.93858751527533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1649059130592!5m2!1sru!2sru"
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          width="800" height="600" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a class="main-footer__logo logo" href="index.html">

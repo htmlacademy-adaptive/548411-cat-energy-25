@@ -4,30 +4,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
-      <img class="logo" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+<body class="page__body">
+  <header class="page__header main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__logo-block">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
+          <img class="logo" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+        </a>
       </div>
-    </nav>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__toggle-bar"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="form-page">
@@ -46,19 +54,19 @@
               <li class="general-info__item">
                 <label class="text-field">
                   <span class="text-field__label">Имя:<sup>*</sup></span>
-                  <input class="text-field__input" type="text" name="owner-name" placeholder="Барсик">
+                  <input class="text-field__input input" type="text" name="owner-name" placeholder="Барсик">
                 </label>
               </li>
               <li class="general-info__item">
                 <label class="text-field">
                   <span class="text-field__label">Вес (кг):<sup>*</sup></span>
-                  <input class="text-field__input" type="text" name="cat-weight" placeholder="7">
+                  <input class="text-field__input input" type="text" name="cat-weight" placeholder="7">
                 </label>
               </li>
               <li class="general-info__item">
                 <label class="text-field">
                   <span class="text-field__label">Возраст (лет):</span>
-                  <input class="text-field__input" type="text" name="cat-age" placeholder="7">
+                  <input class="text-field__input input" type="text" name="cat-age" placeholder="7">
                 </label>
               </li>
             </ul>
@@ -96,13 +104,13 @@
               <li class="contacts-info__item">
                 <label class="text-field">
                   <span class="text-field__label">E-mail:<sup>*</sup></span>
-                  <input class="text-field__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                  <input class="text-field__input input input--email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
                 </label>
               </li>
               <li class="contacts-info__item">
                 <label class="text-field">
                   <span class="text-field__label">Телефон:<sup>*</sup></span>
-                  <input class="text-field__input" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+                  <input class="text-field__input input input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
                 </label>
               </li>
             </ul>
@@ -110,7 +118,7 @@
         </fieldset>
 
         <fieldset class="form__comment comment">
-          <legend class="comment-title title-line">Комментарий</legend>
+          <legend class="comment__title title-line">Комментарий</legend>
           <div class="comment__wrapper">
             <label class="comment__label">
               <textarea class="comment__input" name="message" cols="30" rows="10"
@@ -161,12 +169,12 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <iframe class="contacts__map"
+      <div class="main-footer__partnership partnership">
+        <p class="partnership__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="partnership__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <iframe class="partnership__map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.446239645892!2d30.31485056925049!3d59.93858751527533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1649059130592!5m2!1sru!2sru"
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          width="800" height="600" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a class="main-footer__logo logo" href="index.html">
