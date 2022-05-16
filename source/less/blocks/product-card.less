@@ -1,5 +1,13 @@
 .product-card {
   padding: 14px 20px 14px;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 37px 39px 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 38px 40px 39px;
+  }
 }
 
 .product-card__wrapper {
@@ -7,6 +15,12 @@
   grid-template-columns: 140px 35% 1fr;
   min-height: 112px;
   margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 27px;
+    text-align: center;
+  }
 }
 
 .product-card__link-image {
@@ -27,12 +41,31 @@
 
 .product-card__image {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
 }
 
 .product-card__link {
   display: block;
   margin: 0 0 5px;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 28px 0 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 38px 0 25px;
+  }
 }
 
 .product-card__title {
@@ -42,6 +75,22 @@
   font-weight: inherit;
   text-transform: uppercase;
   color: #222222;
+
+  @media (max-width: @mobile-width-only) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+    padding: 0 0 0 6px;
+  }
 }
 
 .product-card__description-item {
@@ -53,9 +102,38 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    grid-auto-rows: auto;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 0 2px;
+  }
 }
 
 .product-card__value {
   margin: 0;
   text-align: end;
+}
+
+.product-card__parameter {
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
+}
+
+.product-card__parameter,
+.product-card__value {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 6px;
+    padding: 0 0 7px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 6px;
+    padding: 1px 0 7px;
+  }
 }

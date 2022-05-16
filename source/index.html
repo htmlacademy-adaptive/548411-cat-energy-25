@@ -8,12 +8,14 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header">
+  <header class="page__header page__header--index main-header">
     <div class="main-header__wrapper">
       <div class="main-header__logo-block">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
-          <img class="logo" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <a class="logo">
+          <img class="logo__image" src="img/logo/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
+        </a>
+        <a class="logo-text">
+          <img class="logo__image" src="img/logo/logo.svg" width="101" height="18" alt="Логотип Cat Energy">
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -57,7 +59,7 @@
       <h2 class="visually-hidden">Предложения к похудению</h2>
       <div class="programs__wrapper">
         <ul class="programs__list">
-          <li class="programs__item">
+          <li class="programs__item programs__item--cat-slim">
             <div class="programs__item">
               <div class="program">
                 <img src="img/content/cat-slim.svg" width="50" height="53" alt="Похудение">
@@ -68,7 +70,7 @@
               </div>
             </div>
           </li>
-          <li class="programs__item">
+          <li class="programs__item programs__item--cat-pro">
             <div class="programs__item">
               <div class="program">
                 <img src="img/content/cat_pro.svg" width="67" height="50" alt="Набор массы">
@@ -112,7 +114,7 @@
           <li class="advantages__item advantages__item--time">
             <div class="advantages__item-wrapper">
               <img class="advantages__image" src="img/content/alarm.svg" width="60" height="60" alt="Будильник">
-              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
             </div>
           </li>
         </ul>
@@ -157,11 +159,9 @@
             </li>
           </ul>
           <div class="example__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--before" type="button"></button>
-            <button class="slider__toggle slider__toggle--after" type="button"></button>
-            <label class="slider__toggles-label">Было</label>
-            <div class="slider__toggles-range"></div>
-            <label class="slider__toggles-label">Стало</label>
+            <button class="slider__toggle slider__toggle--before" type="button">Было</button>
+            <button class="slider__range" aria-label="Переключение слайдера"></button>
+            <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
           </div>
         </div>
       </div>
@@ -171,10 +171,11 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__partnership partnership">
-        <p class="partnership__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="partnership__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <iframe class="partnership__map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.446239645892!2d30.31485056925049!3d59.93858751527533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1649059130592!5m2!1sru!2sru"
+        <p class="partnership__description">
+          <span class="partnership__text">Приглашаем <br>к сотрудничеству дилеров!</span>
+          <span class="partnership__address">ул. Большая Конюшенная, д. 19/8 <span class="partnership__city">Санкт-Петербург</span></span>
+        </p>
+        <iframe class="partnership__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.446239645892!2d30.31485056925049!3d59.93858751527533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1649059130592!5m2!1sru!2sru"
           width="800" height="600" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>

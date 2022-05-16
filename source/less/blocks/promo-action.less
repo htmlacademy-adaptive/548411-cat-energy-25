@@ -1,5 +1,14 @@
 .promo-action {
   padding: 37px 0 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 66px 0 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    padding: 0;
+  }
 }
 
 .promo-action__wrapper {
@@ -10,6 +19,17 @@
   background-position: center 59px, center, center;
   background-size: auto, cover, cover;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 200px;
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 185px 42px 42px;
+    text-align: center;
+  }
 }
 
 .promo-action__description {

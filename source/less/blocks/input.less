@@ -1,16 +1,53 @@
 .input {
-  padding: 13px 15px 14px;
-  border: 1px solid #e7e7e7;
+  padding: 14px 15px 14px;
+  outline: 1px solid #e7e7e7;
+  border: 0;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus-within {
+    outline: 2px solid #444444;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
+
   &--email {
-    padding-right: 40px;
+    padding: 13px 40px 12px 15px;
   }
 
   &--phone {
-    padding-right: 60px;
+    padding: 13px 40px 13px 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 17px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--email {
+      padding: 10px 40px 10px 23px;
+    }
+
+    &--phone {
+      padding: 10px 40px 10px 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      &--email {
+        padding: 10px 53px 10px 21px;
+      }
+
+      &--phone {
+        padding: 10px 40px 10px 16px;
+      }
+    }
   }
 }

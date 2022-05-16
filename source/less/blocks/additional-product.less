@@ -6,6 +6,16 @@
   font-weight: inherit;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional-product__description-list {
@@ -15,6 +25,21 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 212px 92px;
+    margin: 0 0 21px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 212px 73px;
+    margin: 6px 0 0;
+    text-align: start;
+  }
 }
 
 .additional-product__value {

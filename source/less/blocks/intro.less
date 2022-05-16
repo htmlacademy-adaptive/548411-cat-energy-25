@@ -1,5 +1,16 @@
 .intro {
+  min-height: 480px;
+  position: relative;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 835px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 499px;
+    padding-top: 80px;
+  }
 }
 
 .intro__wrapper {
@@ -9,16 +20,54 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+    min-height: auto;
+    margin-bottom: 44px;
+    padding: 0 0 0 118px;
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
+    padding: 0 0 0 120px;
+  }
 }
 
 .intro__slogan {
-  margin: 25px 0 29px;
+  margin: 21px 0 29px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    margin: 36px 0 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 33px 0 29px;
+  }
 }
 
 .intro__link-wrapper {
   padding: 138px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 0 120px;
+  }
+}
+
+.intro__button {
+  @media (min-width: @tablet-width) {
+    width: 244px;
+  }
 }

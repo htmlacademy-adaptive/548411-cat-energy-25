@@ -1,13 +1,35 @@
 .program-selection {
-  padding-top: 27px  0 0;
+  padding: 27px 0 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 43px 0 0;
+  }
 }
 
 .program-selection__wrapper {
   padding: 0 20px 39px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0 30px;
+    padding: 0 0 66px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }
 
 .program-selection__title {
   margin: 0 0 37px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 56px;
+  }
 }
 
 .program-selection__description {
@@ -16,4 +38,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
