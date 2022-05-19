@@ -1,24 +1,159 @@
 .intro {
-  text-align: center;
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
 }
 
 .intro__wrapper {
-  padding: 27px 35px;
-  min-height: 302px;
-  background-image: linear-gradient(fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/background/index-background-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  padding: 27px 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 0 0 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 111px 0 52px 80px;
+  }
+}
+
+.intro__title {
+  display: block;
+  width: 300px;
+  margin: 0 auto 25px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 420px;
+    margin: 0 0 40px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #000000;
+  }
 }
 
 .intro__slogan {
-  margin: 25px 0 29px;
+  margin: 0 0 29px;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.intro__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: 29px;
+    right: 220px;
+    left: auto;
+  }
+}
+
+.intro__background-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 302px;
+  background-image: url("../img/background/main-promo-background.jpg");
+  background-position: top center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vw rgba(104, 183, 56, 0.85);
+  top: 0;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 720px;
+    height: 694px;
+    background-image: url("../img/background/main-promo-background-desktop.jpg");
+    background-size: 720px 694px;
+    top: -114px;
+    right: -110px;
+    z-index: -2;
+  }
 }
 
 .intro__link-wrapper {
-  padding: 138px 20px 20px;
+  margin: 3px 0 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 49px 0 526px 91px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 267px 80px;
+  }
+}
+
+.intro__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 11px 44px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    height: 54px;
+    margin: 0;
+    padding: 16px 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,5 +1,18 @@
 .general-info {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 23px;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 37px 72px 41px;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.general-info__item {
+  margin-bottom: 20px;
 }

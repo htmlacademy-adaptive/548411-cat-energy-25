@@ -1,10 +1,29 @@
 .main-header__wrapper {
   position: relative;
+  padding: 10px 20px 16px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px 38px 28px;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 53px 40px 32px;
+  }
 }
 
 .main-header__logo-block {
   display: flex;
   align-items: center;
-  padding: 10px 44px 17px 20px;
+  justify-content: space-between;
+
+  & a:last-child {
+    margin: 5px auto 0;
+  }
 }

@@ -1,16 +1,45 @@
+.comment {
+  padding: 0 20px 0;
+  border: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
 .comment__title {
-  margin-bottom: 38px;
-  padding-left: 20px;
-  padding-right: 22px;
+  max-width: max-content;
+  margin: 0 0 38px -20px;
+  padding: 0 22px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 76px -39px;
+    padding: 0 38px 0 39px;
+  }
 }
 
 .comment__wrapper {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 67px 0 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
 }
 
 .comment__input {
+  min-height: 150px;
   width: 100%;
-  padding: 9px 12px 9px 15px;
+  padding: 8px 12px 12px 15px;
   font-family: inherit;
   font-weight: inherit;
   font-size: 16px;
@@ -18,4 +47,11 @@
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: @tablet-width) {
+    min-height: 173px;
+    padding: 9px 12px 12px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

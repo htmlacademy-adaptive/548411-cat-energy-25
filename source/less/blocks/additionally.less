@@ -1,22 +1,61 @@
 .additionally {
   padding: 0 20px 34px;
   border: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .additionally__wrapper {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 67px 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
 }
 
 .additionally__title {
   max-width: max-content;
   margin: 0 0 34px -20px;
   padding: 0 23px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 57px -40px;
+    padding: 0 41px 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 57px -40px;
+    padding: 0 40px 0 40px;
+  }
 }
 
 .additionally__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
+    row-gap: 32px;
+    column-gap: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 80px;
+  }
 }
 
 .additionally__item {
@@ -26,10 +65,20 @@
   &:not(:last-child) {
     margin-bottom: 12px;
   }
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .additionally__label-field {
   margin-right: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .additionally__label {
@@ -39,4 +88,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
