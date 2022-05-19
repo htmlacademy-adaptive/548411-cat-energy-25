@@ -14,7 +14,7 @@
 .promo-action__wrapper {
   min-height: 289px;
   padding: 187px 61px 43px 58px;
-  background-image: url("/source/img/icons/icon_gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("/source/img/content/action-image.jpg");
+  background-image: url("../img/icons/icon_gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/content/action-image.jpg");
   background-repeat: no-repeat;
   background-position: center 59px, center, center;
   background-size: auto, cover, cover;
@@ -23,11 +23,15 @@
   @media (min-width: @tablet-width) {
     min-height: 200px;
     padding: 71px 124px 69px 422px;
+    background-image: url("../img/icons/icon_gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/background/catalog-promo-background-tablet.jpg");
+    background-position: 79px center, center, center;
     text-align: left;
   }
 
   @media (min-width: @desktop-width) {
     padding: 185px 42px 42px;
+    background-image: url("../img/icons/icon_gift.svg"), linear-gradient(to left, fade(@base-color, 85%), fade(@base-color, 85%)), url("../img/background/catalog-promo-background-desktop.jpg");
+    background-position: center 56px, center, center;
     text-align: center;
   }
 }
